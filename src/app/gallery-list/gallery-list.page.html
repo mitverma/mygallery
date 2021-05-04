@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar class="header-background">
+      <ion-buttons slot="start">
+          <ion-back-button></ion-back-button>
+        </ion-buttons>
+    <ion-title>{{getAllFolderDetail?.folderName}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="create">
+      <ion-label>
+          Note : <ion-note> File Size should not be more than 1MB</ion-note>
+      </ion-label>
+      <div class="btn-holder">
+        <button class="btn-green btn btn-full " (click)="openActionSheet();">Upload Photo</button>
+      </div>
+  </div>
+
+  <div class="preview" *ngIf="fileData && fileData.image">
+      <img [src]="fileData.image" alt="">
+      <button class="btn-green btn btn-full" (click)="upload()">Upload</button>
+  </div>
+
+  <div class="listing-image" *ngIf="getAllFolderDetail && getAllFolderDetail.imageList && getAllFolderDetail.imageList.length">
+    <ion-row>
+      <ion-col size="4" *ngFor="let list of getAllFolderDetail?.imageList" (click)="viewImage(list)">
+        <img src="{{list.image}}" alt="">
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>

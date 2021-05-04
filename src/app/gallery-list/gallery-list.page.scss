@@ -1,0 +1,20 @@
+.listing-image {
+    margin-top: 35px;
+    ion-col {
+        box-shadow: 0px 1px 2px #adadad;
+    }
+}
+.btn-holder {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.preview {
+    width: 300px;
+    height: 300px;
+    box-shadow: 0px 1px 3px #c7c7c7;
+    border-radius: 100%;
+    margin: 30px auto;
+    overflow: hidden;
+    text-align: center;
+}

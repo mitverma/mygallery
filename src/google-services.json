@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "729302547857",
+    "project_id": "mygallery-88a5a",
+    "storage_bucket": "mygallery-88a5a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:729302547857:android:2629d17e7a1e65c907ee30",
+        "android_client_info": {
+          "package_name": "com.company.shriinsta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "729302547857-46dvmva4clpud9cf3n2h1471unajpjls.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeZQbf7nD1rRjCAQ_C2tlhr40uYEKOlsQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "729302547857-46dvmva4clpud9cf3n2h1471unajpjls.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

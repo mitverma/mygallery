@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar class="header-background">
+    <ion-title>Gallery</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="logo-section">
+    <img src="assets/imgs/logo.png" alt="">
+  </div>
+  <div class="text-center">
+    <!-- <h3>Create your gallery</h3> -->
+    <button class="btn-green btn btn-full " (click)="createFolder();">Create your own folder</button>
+  </div>
+
+  <div class="show-input" *ngIf="inputFolderName">
+    <ion-item>
+      <ion-label position="floating">Folder Name</ion-label>
+      <ion-input type="text" [(ngModel)]="folderName"></ion-input>
+    </ion-item>
+
+    <button class="btn-green btn btn-full " (click)="create();">Create</button>
+    <button class="btn-green btn btn-full " (click)="close();">Close</button>
+  </div>
+
+  <ion-row class="gallery-list">
+    <ion-col *ngFor="let list of galleryData" size="4" (click)="viewFolder(list)">
+      <ion-icon name="folder" class="icon-folder"></ion-icon>
+      <span class="name">{{list.folderName}}</span>
+    </ion-col>
+    </ion-row>
+  
+</ion-content>

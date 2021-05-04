@@ -24,3 +24,39 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+
+@import url(https://use.fontawesome.com/releases/v5.7.2/css/all.css); 
+// @import url(https://fonts.googleapis.com/css?family=Lato); 
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans); 
+
+
+
+* {
+    font-family: 'Josefin Sans', sans-serif !important; 
+}
+
+
+.btn-green {
+    padding: 12px 40px 10px;
+    height: 40px;
+    border-radius: 6px;
+    background-color: #90d06f;
+    color: #000;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    &:hover:not(.disable-hover) {
+        background-color: #90d06f;
+        color: #000; 
+    }
+}
+
+
+.header-background {
+    --background: #90d06f;
+    font-family: 'Josefin Sans', sans-serif !important;
+    .title-default {
+        --color:#000;
+    }
+}

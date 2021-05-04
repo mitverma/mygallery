@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar class="header-background">
+    <ion-title>imageViewer</ion-title>
+    <ion-buttons slot="end">
+        <ion-button (click)="dismiss()">Close</ion-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="view-image">
+    <img [src]="image" alt="">
+  </div>
+</ion-content>
